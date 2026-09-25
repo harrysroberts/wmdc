@@ -15,8 +15,8 @@ many existing implementations.
 ## Installation
 
 ```r
-# install.packages("devtools")
-devtools::install_github("harrysroberts/wmdc")
+# install.packages("pak")
+pak::pak("harrysroberts/wmdc")
 ```
 
 ## Background
