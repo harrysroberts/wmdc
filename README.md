@@ -35,12 +35,12 @@ impedance variable. For example, if travel time is taken to be the impedance
 variable, then the distribution of travel times in the study area can be used to 
 estimate the parameters of an impedance function.
 
-However, most existing implementations of fail to account for the fact that the 
-underlying spatial structure constraining travel behaviour, which can lead to 
-biased estimates of the decay parameters and misspecification of the impedance 
-function. For instance, the relative lack of short-distance trips in observed 
-data is often interpreted as evidence of a 'frictionless' behavioural response 
-to impedance at short distances, thus supporting a Gaussian-type decay function 
+However, most existing implementations fail to account for  the underlying
+spatial structure constraining travel behaviour, which can lead to biased 
+estimates of the decay parameters and misspecification of the impedance function. 
+For instance, the relative lack of short-distance trips in observed data is often
+interpreted as evidence of a 'frictionless' behavioural response to impedance at 
+short distances, thus supporting a Gaussian-type decay function 
 (e.g. [Ingram 1971](https://doi.org/10.1080/09595237100185131)). A more likely 
 explanation for this pattern is that there are simply fewer reachable 
 destinations at short distances, which is a property of the spatial structure 
@@ -188,7 +188,10 @@ x <- seq(0, 60, by = 1)
 fx <- result$impedance_function(x)
 plot(x, fx, type = "l", xlab = "Travel time (min)", ylab = "Impedance")
 ```
-## Accuracy of WMDC as a calibration technique
+
+## FAQs
+
+**Is WMDC accurate?**
 
 The weighting in the WMDC method is an approximation to the systematic variation 
 in the spatial structure over impedance, capturing growth in the number of 
@@ -210,7 +213,7 @@ there is sufficient density.
 
 For more detail, see [`here`](https://github.com/harrysroberts/hEART_2026).
 
-## Cautionary note on the dimension parameter
+**What does the dimension parameter $\alpha$ mean, and what values should it take?**
 
 As noted above, $\alpha$ is related to the effective spatial dimension of the 
 study environment. This is a fractal extension of the concept of spatial
@@ -223,7 +226,7 @@ estimated $\alpha$ is within this range. If the estimated $\alpha$ falls outside
 this range, the calibration should be re-run with `free_dimension = FALSE` and a 
 fixed value of `dimension` between 1 and 2 inclusive.
 
-## Cautionary note on allowing free estimation of dimension or shape parameters
+**Will the calibration always produce the optimal solution?**
 
 If either the shape parameter $r$ or the dimension parameter $\alpha$ is 
 estimated as a free parameter, through selecting `free_shape = TRUE` or
@@ -235,7 +238,7 @@ parameter space, it is advisable to re-run the calibration with fixed
 parameters, or to try different starting values for the optimisation.
 
 
-## Why is an exponential impedance function used as the default?
+**Why is an exponential impedance function used as the default?**
 
 The exponential form of the impedance function is used as the default in this
 package (through `shape = 1`). This is not an arbitrary decision: exponential 
@@ -270,6 +273,26 @@ and [Anas (1983)](https://doi.org/10.1016/0191-2615(83)90023-1).
 
 - [`maxLik`](https://cran.r-project.org/package=maxLik) — maximum likelihood estimation
 
+## Citation
+
+If you use this package in your research, the following citations are appreciated:
+
+**Poster presented at hEART 2026:**
+
+ Roberts, H. S., Calastri, C., Batley, R. 2026. _Using marginal impedance distributions to calibrate 
+impedance functions for accessibility measurement_ \[Poster\]. European Association for Research in Transportation (hEART), 2026, Paris.
+
+**This software:**
+
+Roberts, H.S. (2026) “wmdc”. Zenodo. doi:TBC.
+
 ## License
 
-MIT © Harry Roberts
+MIT License. See LICENSE file for details.
+
+## Author
+
+Harry Roberts ([H.S.Roberts@leeds.ac.uk](mailto:H.S.Roberts@leeds.ac.uk))
+
+Institute for Transport Studies, University of Leeds
+
