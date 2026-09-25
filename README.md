@@ -277,16 +277,31 @@ and [Anas (1983)](https://doi.org/10.1016/0191-2615(83)90023-1).
 
 ## Citation
 
-If you use this package in your research, the following citations are appreciated:
+If you use this code in your research, please this package and the associated poster as follows
 
-**Poster presented at hEART 2026:**
+Roberts, H.S. 2026. wmdc. doi:10.5281/zenodo.22962431.
 
- Roberts, H. S., Calastri, C., Batley, R. 2026. _Using marginal impedance distributions to calibrate 
-impedance functions for accessibility measurement_ \[Poster\]. European Association for Research in Transportation (hEART), 2026, Paris.
+> Roberts, H.S., Calastri, C. and Batley, R. 2026. Using Marginal Impedance Distributions to Calibrate Impedance Functions for Accessibility Measurement In: _14th Symposium of the European Association for Research in Transportation (hEART)_. Paris, France.
 
-**This software:**
+**BibTeX:**
 
-Roberts, H.S. (2026) “wmdc”. Zenodo. doi:10.5281/zenodo.22962431.
+```bibtex
+@software{roberts_2026_22962431,
+  author        = {Roberts, H. S.},
+  title         = {wmdc},
+  year          = 2026,
+  version       = {v1.0.0},
+  url           = {https://doi.org/10.5281/zenodo.22962431}
+}
+
+@inproceedings{roberts_using_2026,
+	address = {Paris, France},
+	title = {Using {Marginal} {Impedance} {Distributions} to {Calibrate} {Impedance} {Functions} for {Accessibility} {Measurement}},
+	booktitle = {14th {Symposium} of the {European} {Association} for {Research} in {Transportation} ({hEART})},
+	author = {Roberts, H. S. and Calastri, C. and Batley, R.},
+	year = {2026},
+}
+```
 
 ## License
 
