@@ -1,5 +1,7 @@
 # wmdc
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21224724.svg)](https://doi.org/10.5281/zenodo.21224724)
+
 **Weighted Marginal Distribution Calibration**
 
 An R package for calibrating impedance functions used in spatial analysis. 
@@ -284,7 +286,7 @@ impedance functions for accessibility measurement_ \[Poster\]. European Associat
 
 **This software:**
 
-Roberts, H.S. (2026) “wmdc”. Zenodo. doi:TBC.
+Roberts, H.S. (2026) “wmdc”. Zenodo. doi:10.5281/zenodo.22962431.
 
 ## License
 
