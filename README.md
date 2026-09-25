@@ -1,6 +1,6 @@
 # wmdc
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21224724.svg)](https://doi.org/10.5281/zenodo.21224724)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22962431.svg)](https://doi.org/10.5281/zenodo.22962431)
 
 **Weighted Marginal Distribution Calibration**
 
