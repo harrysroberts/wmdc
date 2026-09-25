@@ -87,7 +87,7 @@ nature of transport networks.
 Taking the product of the impedance and spatial weight functions and normalising
 gives the probability density function for a **generalised gamma distribution** 
 
-$$\p(x) = \frac{r \lambda^\alpha}{\Gamma(\alpha/r)} 
+$$p(x) = \frac{r \lambda^\alpha}{\Gamma(\alpha/r)} 
 x^{\alpha-1} e^{-(\lambda x)^r}$$
 
 where $\Gamma(\cdot)$ is the gamma function. The free parameter(s) of this
